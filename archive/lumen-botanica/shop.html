@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catalog — Lumen Botanica</title>
+<meta name="description" content="Browse 24 species. Filter by light, care level, pet safety and price.">
+<meta name="theme-color" content="#04070a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23050b0c'/%3E%3Cpath d='M16 25V11M16 11c0-4 3-6 7-6 0 5-3 7-7 7zM16 15c0-3.5-3-5.5-7-5.5 0 4.5 3 6.5 7 6.5z' stroke='%237CFFC4' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" role="presentation"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Lumen Botanica — home">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="38" height="38" rx="11" stroke="url(#bg1)" stroke-width="1.4"/>
+        <path d="M20 32V15" stroke="#7CFFC4" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M20 17c0-5.5 3.8-8.5 9.5-8.5C29.5 15 25.7 18 20 18z" fill="url(#bg2)"/>
+        <path d="M20 23c0-4.6-3.4-7.2-8.4-7.2 0 6 3.4 8.4 8.4 8.4z" fill="url(#bg3)"/>
+        <defs>
+          <linearGradient id="bg1" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#B8FF3C" stop-opacity=".8"/><stop offset="1" stop-color="#2AE0D0" stop-opacity=".4"/></linearGradient>
+          <linearGradient id="bg2" x1="20" y1="18" x2="30" y2="8"><stop stop-color="#3fbe86"/><stop offset="1" stop-color="#B8FF3C"/></linearGradient>
+          <linearGradient id="bg3" x1="20" y1="24" x2="11" y2="16"><stop stop-color="#2ad6a5"/><stop offset="1" stop-color="#2AE0D0"/></linearGradient>
+        </defs>
+      </svg>
+      <span class="brand-name">Lumen<small>Botanica</small></span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html#collections">Collections</a>
+      <a href="shop.html" aria-current="page">Shop</a>
+      <a href="index.html#method">Method</a>
+      <a href="index.html#guides">Care guides</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="icon-btn" href="shop.html" aria-label="Search the catalog">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      </a>
+      <button class="icon-btn" data-cart-open aria-label="Open cart" aria-haspopup="dialog" aria-controls="cart-drawer">
+        <svg viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg>
+        <span class="cart-count" data-cart-count aria-hidden="true">0</span>
+      </button>
+      <button class="icon-btn burger" data-burger aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+  <a href="index.html#collections">Collections <span>01</span></a>
+  <a href="shop.html">Shop <span>02</span></a>
+  <a href="index.html#method">Method <span>03</span></a>
+  <a href="index.html#guides">Care guides <span>04</span></a>
+  <a href="index.html#contact">Contact <span>05</span></a>
+</nav>
+
+<main id="main">
+  <section class="page-head">
+    <span class="orb orb-1" style="opacity:.32"></span>
+    <span class="orb orb-3" style="opacity:.28"></span>
+    <div class="wrap">
+      <nav class="crumbs reveal" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span aria-hidden="true">/</span><span>Catalog</span>
+      </nav>
+      <span class="eyebrow reveal">The catalog</span>
+      <h1 class="reveal" style="--d:70ms;font-size:clamp(2.3rem,5.6vw,4.4rem);margin:14px 0 18px">
+        Every plant we grow.
+      </h1>
+      <p class="lede reveal" style="--d:140ms">
+        Filter by the light you actually have, the water you will actually give, and whether
+        something in your house is likely to chew on it.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:clamp(20px,3vw,36px)">
+    <div class="wrap">
+      <div class="filters reveal">
+        <div class="filter-row">
+          <label class="search">
+            <span class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Search plants</span>
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            <input type="search" data-shop-q placeholder="Search 24 plants — try “monstera”, “low light”, “pet safe”…" autocomplete="off">
+          </label>
+          <div class="select">
+            <label class="sr-only" for="sort" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Sort by</label>
+            <select id="sort" data-shop-sort>
+              <option value="popular">Most popular</option>
+              <option value="newest">Newest first</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="rating">Highest rated</option>
+              <option value="name">A – Z</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-row" role="group" aria-label="Filter by category">
+          <button class="chip" data-cat="all" aria-pressed="true">Everything</button>
+          <button class="chip" data-cat="indoor" aria-pressed="false">Indoor</button>
+          <button class="chip" data-cat="outdoor" aria-pressed="false">Outdoor</button>
+          <button class="chip" data-cat="succulents" aria-pressed="false">Succulents</button>
+          <button class="chip" data-cat="hanging" aria-pressed="false">Trailing</button>
+          <button class="chip" data-cat="rare" aria-pressed="false">Rare</button>
+        </div>
+
+        <div class="filter-row">
+          <span class="mono" style="min-width:70px">LIGHT</span>
+          <button class="chip" data-light="any" aria-pressed="true">Any</button>
+          <button class="chip" data-light="bright" aria-pressed="false">Bright</button>
+          <button class="chip" data-light="medium" aria-pressed="false">Medium</button>
+          <button class="chip" data-light="low" aria-pressed="false">Low</button>
+        </div>
+
+        <div class="filter-row">
+          <span class="mono" style="min-width:70px">CARE</span>
+          <button class="chip" data-diff="any" aria-pressed="true">Any</button>
+          <button class="chip" data-diff="easy" aria-pressed="false">Easy</button>
+          <button class="chip" data-diff="moderate" aria-pressed="false">Moderate</button>
+          <button class="chip" data-diff="expert" aria-pressed="false">Expert</button>
+          <label class="consent" style="margin-left:6px;align-items:center">
+            <input type="checkbox" data-pet>
+            <span style="font-size:.86rem">Pet safe only</span>
+          </label>
+        </div>
+
+        <div class="filter-row">
+          <span class="mono" style="min-width:70px">PRICE</span>
+          <input type="range" min="15" max="400" step="5" value="400" data-shop-max
+                 aria-label="Maximum price" style="flex:1;max-width:320px;accent-color:var(--lime)">
+          <span class="result-count" data-shop-max-out>Any price</span>
+        </div>
+
+        <hr class="hr-glow">
+
+        <div class="filter-row" style="justify-content:space-between">
+          <span class="result-count" data-shop-count aria-live="polite"></span>
+          <button class="chip" data-shop-clear>Clear filters</button>
+        </div>
+      </div>
+
+      <div class="prod-grid" data-shop-grid></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="signup reveal" style="text-align:center;justify-items:center">
+        <span class="eyebrow">Can't decide?</span>
+        <h2 style="max-width:18ch">Send us a photo of your room. We'll pick.</h2>
+        <p class="lede" style="text-align:center">
+          Our growers match a species to your actual light in under a day — free, no obligation,
+          and they will happily tell you the plant you want is wrong for the spot.
+        </p>
+        <a class="btn btn-primary" href="index.html#contact">Get a plant match <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:1em;height:1em"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Lumen Botanica — home">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="38" height="38" rx="11" stroke="#2AE0D0" stroke-opacity=".5" stroke-width="1.4"/>
+            <path d="M20 32V15" stroke="#7CFFC4" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M20 17c0-5.5 3.8-8.5 9.5-8.5C29.5 15 25.7 18 20 18z" fill="#B8FF3C"/>
+            <path d="M20 23c0-4.6-3.4-7.2-8.4-7.2 0 6 3.4 8.4 8.4 8.4z" fill="#2AE0D0"/>
+          </svg>
+          <span class="brand-name">Lumen<small>Botanica</small></span>
+        </a>
+        <p>A vertical greenhouse on the Merwehaven, growing 520 species under full-spectrum light since 2016.</p>
+        <div class="socials">
+          <a href="index.html#contact" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+          <a href="index.html#contact" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9.5l5 2.5-5 2.5z"/></svg></a>
+          <a href="index.html#contact" aria-label="Pinterest"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 20l2-8M10 11.4c0-1.7 1.2-3 2.9-3 1.5 0 2.6 1 2.6 2.6 0 2-1.2 3.6-2.8 3.6-.9 0-1.5-.6-1.3-1.4"/></svg></a>
+          <a href="index.html#contact" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 10.5V17M8 7.6v.1M12 17v-3.6a2 2 0 0 1 4 0V17"/></svg></a>
+        </div>
+      </div>
+
+      <div class="fcol">
+        <h4>Shop</h4>
+        <a href="shop.html?cat=indoor">Indoor</a>
+        <a href="shop.html?cat=outdoor">Outdoor</a>
+        <a href="shop.html?cat=succulents">Succulents</a>
+        <a href="shop.html?cat=hanging">Trailing</a>
+        <a href="shop.html?cat=rare">Rare Room</a>
+        <a href="shop.html">Gift cards</a>
+      </div>
+      <div class="fcol">
+        <h4>Learn</h4>
+        <a href="index.html#guides">Care guides</a>
+        <a href="index.html#method">Our method</a>
+        <a href="index.html#about">Sustainability</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#contact">Greenhouse visits</a>
+      </div>
+      <div class="fcol">
+        <h4>Support</h4>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#contact">Delivery &amp; returns</a>
+        <a href="index.html#contact">90-day guarantee</a>
+        <a href="index.html#contact">Track an order</a>
+        <a href="index.html#contact">Trade &amp; offices</a>
+      </div>
+    </div>
+
+    <div class="footer-bot">
+      <span>&copy; <span data-year>2026</span> Lumen Botanica BV · KvK 61094422 · Rotterdam</span>
+      <ul>
+        <li><a href="index.html#contact">Privacy</a></li>
+        <li><a href="index.html#contact">Terms</a></li>
+        <li><a href="index.html#contact">Cookies</a></li>
+      </ul>
+      <button class="to-top" data-to-top>
+        Back to top
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+      </button>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/data.js" defer></script>
+<script src="assets/js/cart.js" defer></script>
+<script src="assets/js/shop.js" defer></script>
+<script src="assets/js/checkout.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
